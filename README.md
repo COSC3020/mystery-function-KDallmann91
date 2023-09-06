@@ -12,3 +12,11 @@ function mystery(a) {
     else return a[0];
 }
 ```
+
+If the length of the array is 1 then it returns the 1 element.
+it then makes a shallow copy of the array, starting after the first element, to the end of the array, and stores it in variable foo. 
+If foo is greater than the first element of the array then it returns array foo.
+if the first element is greater then it returns the first element. 
+
+It appears that the comparison will always return false, so it will always return a slice of the array, removing the first element, if it is not length 1. 
+
