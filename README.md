@@ -4,6 +4,17 @@
 What does the `mystery()` function in the following piece of code do? Add your
 answer to this markdown file.
 
+The array returns the first element when there is only one element. 
+Then it calls itself, inputing the same array, without the first element, saving to a variable. 
+At the top of the call stack it returns the final value. 
+Then it goes up one call and compares the final to the penultimate. 
+It then returns whichever is higher, and it continues down the call stack, returning the highest element each time. 
+
+It returns the highest element. Joel Chambers, helped me understand in the Lab. 
+
+
+
+
 ```javascript
 function mystery(a) {
     if(a.length == 1) return a[0];
@@ -12,3 +23,4 @@ function mystery(a) {
     else return a[0];
 }
 ```
+
